@@ -16,9 +16,20 @@
 		<title>UNDER CONSTRUCTION</title>
 	</head>
 	<body>
-    <i class="fas fa-screwdriver-wrench"></i>
+		<i class="fas fa-screwdriver-wrench"></i>
 		<h3>THIS WEBSITE IS</h3>
-		<h1>UNDER CONSTRUCTION</h1>
-		<script></script>
+		<h2>UNDER CONSTRUCTION</h2>
+
+		<footer>
+			<p id="year"></p>
+		</footer>
+		<script>
+			const year = document.getElementById('year');
+			year.innerText = displayYear();
+
+			function displayYear() {
+				return new Date().getFullYear();
+			}
+		</script>
 	</body>
 </html>
